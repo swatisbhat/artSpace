@@ -3,9 +3,64 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<title>artSpace</title>
 	</head>
 	<body>
-		<h1>hiiiii</h1>
+		<div class="container mt-5 border rounded">
+			<div class="row border-bottom">
+				<div class="col">
+					<nav class="navbar navbar-light bg-light">
+						<a class="navbar-brand">artSpace</a>
+						<form class="form-inline">
+							<input
+								class="form-control mr-sm-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button
+								class="btn btn-outline-success my-2 my-sm-0"
+								type="submit"
+							>
+								Search
+							</button>
+						</form>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3 border-right">
+					<div class="results">
+						<nav class="navbar bg-light">
+							<a class="navbar-brand">Exhibits</a>
+						</nav>
+						<ul class="list-group">
+							<li class="list-group-item border-0">
+								Object1
+							</li>
+							<li class="list-group-item border-0">
+								Object2
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-6 border-right">
+					<div class="exhibit"></div>
+				</div>
+				<div class="col-3">
+					<div class="favorites">
+						<nav class="navbar bg-light">
+							<a class="navbar-brand">Favorites</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
