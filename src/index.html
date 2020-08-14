@@ -17,9 +17,9 @@
 				<div class="col">
 					<nav class="navbar navbar-light bg-light">
 						<a class="navbar-brand">artSpace</a>
-						<form class="form-inline">
+						<form class="form-inline search">
 							<input
-								class="form-control mr-sm-2"
+								class="form-control mr-sm-2 search__input"
 								type="search"
 								placeholder="Search"
 								aria-label="Search"
@@ -28,29 +28,22 @@
 								class="btn btn-outline-success my-2 my-sm-0"
 								type="submit"
 							>
-								Search
+								Explore..
 							</button>
 						</form>
 					</nav>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-3 border-right">
+				<div class="col border-right">
 					<div class="results">
 						<nav class="navbar bg-light">
 							<a class="navbar-brand">Exhibits</a>
 						</nav>
-						<ul class="list-group">
-							<li class="list-group-item border-0">
-								Object1
-							</li>
-							<li class="list-group-item border-0">
-								Object2
-							</li>
-						</ul>
+						<div class="row result__list"></div>
 					</div>
 				</div>
-				<div class="col-6 border-right">
+				<div class="col-6 d-none border-right">
 					<div class="exhibit"></div>
 				</div>
 				<div class="col-3">
