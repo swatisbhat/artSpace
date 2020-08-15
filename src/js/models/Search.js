@@ -18,6 +18,7 @@ export default class Search {
 			);
 
 			this.result = await Promise.all(
+				// TODO: handle case when array is null
 				res.data.objectIDs
 					.slice(0, 10)
 					.map((objectID) => this.getArtifact(objectID))
